@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
   border-radius: 20px;
 }
@@ -56,6 +57,22 @@
   font-size: 12px;
   color: gray;
 }
+.award {
+  font-size: 12px;
+  border-radius: 10px;
+  border: 3px solid gold;
+  padding: 5px;
+  max-width: 330px;
+  width: 80%;
+  margin-top: 10px;
+  font-style: italic;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+.award:hover {
+  background-color: gold;
+  transform: translateY(-2px);
+}
 .grey-tag {
   background-color: #eeeeee;
 }
@@ -65,11 +82,48 @@
 .red-tag {
   background-color: #ffeaea;
 }
+.gold-tag {
+  background-color: #8a2d3b;
+}
+.medal {
+  width: 20px;
+}
 .headshot {
-  width: 200px;
+  width: clamp(150px, 15vw, 200px);
+  height: clamp(150px, 15vw, 200px);
+  aspect-ratio: 1/1;
   border-radius: 50%;
+  object-fit: cover;
+}
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 5px;
+  padding: 5px;
+}
+.contact-links p {
+  padding: 0;
+  margin: 0;
 }
 .job-highlight {
   font-weight: 800;
   font-style: italic;
+}
+.title span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.title span:hover {
+  transform: translateY(-15px);
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: #0000ee;
+}
+a:hover {
+  color: orange;
 }
