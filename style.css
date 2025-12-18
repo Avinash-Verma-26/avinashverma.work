@@ -56,31 +56,23 @@
   padding: 4px 7px;
   font-size: 12px;
   color: gray;
-}
-.award {
-  font-size: 12px;
-  border-radius: 10px;
-  border: 3px solid gold;
-  padding: 5px;
-  max-width: 330px;
-  width: 80%;
-  margin-top: 10px;
-  font-style: italic;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease;
   cursor: pointer;
 }
-.award:hover {
-  background-color: gold;
-  transform: translateY(-2px);
+.tag:hover {
+  background-color: white;
 }
 .grey-tag {
   background-color: #eeeeee;
+  border: 2px solid #eeeeee;
 }
 .blue-tag {
   background-color: #cbdceb;
+  border: 2px solid #cbdceb;
 }
 .red-tag {
   background-color: #ffeaea;
+  border: 2px solid #ffeaea;
 }
 .gold-tag {
   background-color: #8a2d3b;
@@ -101,7 +93,7 @@
   justify-content: start;
   align-items: start;
   gap: 5px;
-  padding: 5px;
+  padding-top: 10px;
 }
 .contact-links p {
   padding: 0;
