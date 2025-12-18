@@ -1,0 +1,75 @@
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100vh;
+}
+#main-container {
+  max-width: 800px;
+  width: 70%;
+  padding: 20px;
+}
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 20px;
+}
+.title {
+  font-size: 40px;
+  font-weight: 800;
+}
+/* .subtitle {
+  font-family: "Lora", serif;
+  font-size: 24px;
+} */
+.lora-font {
+  font-family: "Lora", serif;
+}
+.nunito-font {
+  font-family: "Nunito", sans-serif;
+}
+.josefin-font {
+  font-family: "Josefin Sans", sans-serif;
+}
+.karla-font {
+  font-family: "Karla", sans-serif;
+}
+.tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+.bio {
+  font-size: 16px;
+  font-weight: 350;
+  text-align: left;
+  width: 90%;
+}
+.tag {
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  padding: 4px 7px;
+  font-size: 12px;
+  color: gray;
+}
+.grey-tag {
+  background-color: #eeeeee;
+}
+.blue-tag {
+  background-color: #cbdceb;
+}
+.red-tag {
+  background-color: #ffeaea;
+}
+.headshot {
+  width: 200px;
+  border-radius: 50%;
+}
+.job-highlight {
+  font-weight: 800;
+  font-style: italic;
+}
