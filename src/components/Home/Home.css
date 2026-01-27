@@ -1,0 +1,15 @@
+img {
+  width: 300px;
+
+  filter: grayscale(100%);
+  transition-property: filter, border-radius;
+  transition-duration: 0.5s, 0.3s;
+  transition-timing-function: ease-in-out, ease-in;
+}
+img:hover {
+  filter: grayscale(0%);
+  border-radius: 50px;
+}
+.home-section {
+  padding-top: 100px;
+}

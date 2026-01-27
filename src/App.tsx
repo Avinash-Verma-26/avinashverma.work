@@ -1,11 +1,15 @@
 import "./App.css";
+import Navigation from "./components/Navigation/Navigation";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <h1>Hello</h1>
-    </>
+    <div className="main-container">
+      <Navigation />
+      <Outlet />
+    </div>
   );
 }
 
+export default App;
 export default App;
