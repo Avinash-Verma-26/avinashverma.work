@@ -2,14 +2,40 @@ img {
   width: 300px;
 
   filter: grayscale(100%);
-  transition-property: filter, border-radius;
-  transition-duration: 0.5s, 0.3s;
-  transition-timing-function: ease-in-out, ease-in;
+  transition-property: filter, border-radius, transform;
+  transition-duration: 0.5s, 0.3s, 0.3s;
+  transition-timing-function: ease-in, ease-in, ease-in;
 }
 img:hover {
   filter: grayscale(0%);
-  border-radius: 50px;
+  border-radius: 100px;
+  transform: rotate(-5deg);
 }
 .home-section {
+  width: 100%;
   padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: end;
+  justify-content: space-between;
+  text-align: justify;
+}
+.blurb {
+  width: 500px;
+}
+.blurb p {
+  margin: 0;
+  line-height: 1.6;
+}
+.drop-cap {
+  font-size: 124px;
+  float: left;
+  line-height: 0.5;
+  font-weight: 700;
+  margin: 0px 5px 5px 0px;
+  transition: transform 0.3s ease-in-out;
+}
+.rotate {
+  transform: rotate(10deg);
 }
