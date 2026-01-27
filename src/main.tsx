@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
-import { createBrowserRouter, Router, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./components/About/About.tsx";
 import Projects from "./components/Projects/Projects.tsx";
 import Home from "./components/Home/Home.tsx";
