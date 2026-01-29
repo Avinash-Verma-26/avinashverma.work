@@ -2,7 +2,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <p className="footer">
-      &copy; {new Date().getFullYear()} Avinash Verm. All Rights Reserved.
+      &copy; {new Date().getFullYear()} Avinash Verma. All Rights Reserved.
     </p>
   );
 };

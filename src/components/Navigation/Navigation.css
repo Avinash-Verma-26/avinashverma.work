@@ -4,15 +4,21 @@
   gap: 10px;
   align-items: start;
   justify-content: center;
-  color: brown;
-  font-weight: bold;
-  font-size: 24px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: gray;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.current-page {
-  color: black;
-}
 a {
   text-decoration: none;
+  color: gray;
+  transition: color 0.2s ease-out;
+}
+a:hover {
+  cursor: pointer;
+  color: rgb(67, 67, 67);
+}
+.current-page {
+  color: maroon;
 }

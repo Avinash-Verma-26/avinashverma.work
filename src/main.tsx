@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import About from "./components/About/About.tsx";
+import Info from "./components/Info/Info.tsx";
 import Projects from "./components/Projects/Projects.tsx";
 import Home from "./components/Home/Home.tsx";
 
@@ -13,8 +13,8 @@ let router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       {
-        path: "/about",
-        element: <About />,
+        path: "/info",
+        element: <Info />,
       },
       {
         path: "/projects",

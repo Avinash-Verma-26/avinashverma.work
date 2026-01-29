@@ -13,9 +13,9 @@ const Navigation = () => {
       <div className="dot">·</div>
       <NavLink
         className={({ isActive }) => (isActive ? "current-page" : "")}
-        to={"/about"}
+        to={"https://www.linkedin.com/in/avinash-v-58a7a512a/"}
       >
-        about
+        info
       </NavLink>
       <div className="dot">·</div>
       <NavLink

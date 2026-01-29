@@ -16,7 +16,7 @@ const Home = () => {
         <p>
           <span className={rotate ? "rotate drop-cap" : "drop-cap"}>a</span>{" "}
           design technologist and BIM specialist working at the intersection of{" "}
-          <b>architecture</b>,<b>computation</b>, and <b>software</b>. I build
+          <b>architecture</b>, <b>computation</b>, and <b>software</b>. I build
           tools that help teams design faster and work smarter, from Revit/Rhino
           automation and workflow add-ins to data dashboards that turn messy
           project information into clear insights. Outside of the office, I
