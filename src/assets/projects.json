@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Revit Plugins + Dashboard",
+    "link": "#",
+    "description": "Revit C# add-ins (WebView UI) for model management + cleanup, paired with a React dashboard and MongoDB backend with WebSockets for live metrics."
+  },
+  {
+    "id": 2,
+    "title": "Rental Lease Visualizer",
+    "link": "https://cbtit.github.io/rental-timeline/",
+    "description": "3D leasing analytics viewer combining Rhino geometry and Excel lease data, featuring interactive unit selection, hover details, and a timeline slider for visualizing occupancy over time."
+  }
+]

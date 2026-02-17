@@ -1,4 +1,4 @@
-img {
+.home-section img {
   width: 300px;
 
   filter: grayscale(100%);
@@ -6,7 +6,7 @@ img {
   transition-duration: 0.1s, 0.1s, 0.1s;
   transition-timing-function: ease-in, ease-in, ease-in;
 }
-img:hover {
+.home-section img:hover {
   filter: grayscale(0%);
   border-radius: 100px;
   transform: rotate(-5deg);
