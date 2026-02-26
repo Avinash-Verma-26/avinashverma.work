@@ -4,10 +4,18 @@ type propTypes = {
   description: string;
   id: number;
   link: string;
+  images?: string[];
 };
 const base = import.meta.env.BASE_URL;
-const ProjectCard = ({ title, description, id, link }: propTypes) => {
+const ProjectCard = ({ title, description, id, link, images }: propTypes) => {
   const isExternal = link.startsWith("http");
+  const fallbackImages = [
+    `project-images/${id}_1.jpg`,
+    `project-images/${id}_2.jpg`,
+  ];
+  const normalizedImages =
+    images && images.length > 0 ? images : fallbackImages;
+  const [firstImage, secondImage] = normalizedImages;
   return (
     <a
       className="project-card project-card-link"
@@ -16,16 +24,20 @@ const ProjectCard = ({ title, description, id, link }: propTypes) => {
       rel={isExternal ? "noopener noreferrer" : undefined}
     >
       <div className="project-image">
-        <img
-          className="img img-one"
-          src={`${base}project-images/${id}_1.jpg`}
-          alt={`Project ${id} image 1`}
-        />
-        <img
-          className="img img-two"
-          src={`${base}project-images/${id}_2.jpg`}
-          alt={`Project ${id} image 2`}
-        />
+        {firstImage && (
+          <img
+            className="img img-one"
+            src={`${base}${firstImage}`}
+            alt={`${title} image 1`}
+          />
+        )}
+        {secondImage && (
+          <img
+            className="img img-two"
+            src={`${base}${secondImage}`}
+            alt={`${title} image 2`}
+          />
+        )}
       </div>
 
       <div className="project-data">
