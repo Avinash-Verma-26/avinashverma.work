@@ -1,4 +1,3 @@
-import React from "react";
 import "./Overview.css";
 import overviewGraphic from "../../assets/cbt-project-images/overview-graphic.jpg";
 
