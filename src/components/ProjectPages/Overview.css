@@ -1,0 +1,13 @@
+.summary {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.overview-container {
+  width: 100%;
+}
+.infographic {
+  width: 100%;
+  height: auto;
+  display: block;
+}
