@@ -7,6 +7,30 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+## Serverless API (SQLite)
+
+Projects are served from a serverless endpoint at `/api/projects`. The API
+initializes a SQLite database from `data/seed.sql` on first run and reads from
+that file on every cold start.
+
+### Local development
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Install the Vercel CLI (required for local serverless dev):
+   ```bash
+   npm i -g vercel
+   ```
+3. Run the app with the API:
+   ```bash
+   vercel dev
+   ```
+
+If you run `npm run dev`, the UI will start but `/api/projects` will not be
+available.
+
 ## React Compiler
 
 The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
