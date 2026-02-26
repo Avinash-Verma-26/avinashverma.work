@@ -7,20 +7,7 @@ export const config = {
 };
 
 const DB_PATH = path.join("/tmp", "projects.db");
-const SCHEMA_SQL = `
-CREATE TABLE IF NOT EXISTS projects (
-  id INTEGER PRIMARY KEY,
-  title TEXT NOT NULL,
-  description TEXT NOT NULL,
-  link TEXT NOT NULL,
-  role TEXT,
-  year TEXT,
-  tags TEXT,
-  tools TEXT,
-  highlights TEXT,
-  images TEXT
-);
-`;
+const SEED_SQL_PATH = path.join(process.cwd(), "data", "seed.sql");
 
 const parseJsonArray = (value: string | null) => {
   if (!value) return [];
@@ -34,8 +21,9 @@ const parseJsonArray = (value: string | null) => {
 
 const ensureDatabase = () => {
   if (fs.existsSync(DB_PATH)) return;
+  const seedSql = fs.readFileSync(SEED_SQL_PATH, "utf8");
   const db = new Database(DB_PATH);
-  db.exec(SCHEMA_SQL);
+  db.exec(seedSql);
   db.close();
 };
 
