@@ -11,6 +11,13 @@ import VisionUI from "./components/ProjectPages/VisionUI.tsx";
 import RevitPlugin from "./components/ProjectPages/RevitPlugin.tsx";
 import BackendArchitecture from "./components/ProjectPages/BackendArchitecture.tsx";
 
+const params = new URLSearchParams(window.location.search);
+const redirect = params.get("redirect");
+
+if (redirect) {
+  window.history.replaceState(null, "", redirect);
+}
+
 let router = createBrowserRouter([
   {
     path: "/",
