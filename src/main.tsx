@@ -5,6 +5,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Info from "./components/Info/Info.tsx";
 import Projects from "./components/Projects/Projects.tsx";
 import Home from "./components/Home/Home.tsx";
+import CBTTools from "./components/ProjectPages/CBTTools.tsx";
+import Overview from "./components/ProjectPages/Overview.tsx";
+import VisionUI from "./components/ProjectPages/VisionUI.tsx";
+import RevitPlugin from "./components/ProjectPages/RevitPlugin.tsx";
+import BackendArchitecture from "./components/ProjectPages/BackendArchitecture.tsx";
 
 let router = createBrowserRouter([
   {
@@ -19,6 +24,16 @@ let router = createBrowserRouter([
       {
         path: "/projects",
         element: <Projects />,
+      },
+      {
+        path: "/projects/cbt-tools",
+        element: <CBTTools />,
+        children: [
+          { index: true, element: <Overview /> },
+          { path: "visionUI", element: <VisionUI /> },
+          { path: "revitPlugin", element: <RevitPlugin /> },
+          { path: "backendArch", element: <BackendArchitecture /> },
+        ],
       },
     ],
   },

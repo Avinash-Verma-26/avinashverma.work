@@ -1,4 +1,5 @@
 import "./ProjectCard.css";
+import { Link } from "react-router-dom";
 type propTypes = {
   title: string;
   description: string;
@@ -8,13 +9,8 @@ type propTypes = {
 const base = import.meta.env.BASE_URL;
 const ProjectCard = ({ title, description, id, link }: propTypes) => {
   const isExternal = link.startsWith("http");
-  return (
-    <a
-      className="project-card project-card-link"
-      href={link}
-      target={isExternal ? "_blank" : undefined}
-      rel={isExternal ? "noopener noreferrer" : undefined}
-    >
+  const content = (
+    <>
       <div className="project-image">
         <img
           className="img img-one"
@@ -32,7 +28,25 @@ const ProjectCard = ({ title, description, id, link }: propTypes) => {
         <div className="project-title">{title}</div>
         <div className="project-description">{description}</div>
       </div>
-    </a>
+    </>
+  );
+  if (isExternal) {
+    return (
+      <a
+        className="project-card project-card-link"
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <Link className="project-card project-card-link" to={link}>
+      {content}
+    </Link>
   );
 };
 

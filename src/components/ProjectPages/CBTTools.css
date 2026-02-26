@@ -1,0 +1,17 @@
+.project-page-title {
+  font-size: 20px;
+  color: brown;
+}
+.cbt-tools-container {
+  padding-top: 20px;
+  width: 100%;
+}
+.secondary-nav {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+  gap: 10px;
+}
+.current-subview {
+  color: brown;
+}

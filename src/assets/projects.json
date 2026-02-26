@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "title": "Revit Plugins + Dashboard",
-    "link": "#",
+    "title": "CBT Tools : Revit Plugins + Dashboard",
+    "link": "/projects/cbt-tools",
     "description": "Revit C# add-ins (WebView UI) for model management + cleanup, paired with a React dashboard and MongoDB backend with WebSockets for live metrics."
   },
   {
