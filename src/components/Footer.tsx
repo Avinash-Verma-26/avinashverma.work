@@ -1,7 +1,6 @@
-import "./Footer.css";
 const Footer = () => {
   return (
-    <p className="footer">
+    <p className="my-10 text-gray-400">
       &copy; {new Date().getFullYear()} Avinash Verma. All Rights Reserved.
     </p>
   );

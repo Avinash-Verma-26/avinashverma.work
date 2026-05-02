@@ -3,28 +3,36 @@ import "./Navigation.css";
 
 const Navigation = () => {
   return (
-    <div className="navbar">
+    <nav className="w-full flex items-center justify-between border-2 border-brand px-5 py-3 font-main rounded-sm">
       <NavLink
-        className={({ isActive }) => (isActive ? "current-page" : "")}
-        to={"/"}
+        to="/"
+        className={({ isActive }) =>
+          `text-3xl font-semibold transition-colors duration-200 ${isActive ? "text-brand!" : "text-zinc-600! hover:text-brand!"}`
+        }
       >
         avinash-verma
       </NavLink>
-      <div className="dot">·</div>
-      <NavLink
-        className={({ isActive }) => (isActive ? "current-page" : "")}
-        to={"https://www.linkedin.com/in/avinash-v-58a7a512a/"}
-      >
-        info
-      </NavLink>
-      <div className="dot">·</div>
-      <NavLink
-        className={({ isActive }) => (isActive ? "current-page" : "")}
-        to={"/projects"}
-      >
-        projects
-      </NavLink>
-    </div>
+
+      <div className="flex items-center gap-4 text-xl text-zinc-500!">
+        <NavLink
+          to="/info"
+          className={({ isActive }) =>
+            `transition-colors duration-200 ${isActive ? "text-brand! font-semibold" : "hover:text-zinc-800!"}`
+          }
+        >
+          info
+        </NavLink>
+        <span className="text-zinc-300! select-none">·</span>
+        <NavLink
+          to="/projects"
+          className={({ isActive }) =>
+            `transition-colors duration-200 ${isActive ? "text-brand! font-semibold" : "hover:text-zinc-800!"}`
+          }
+        >
+          projects
+        </NavLink>
+      </div>
+    </nav>
   );
 };
 

@@ -1,14 +1,77 @@
 [
   {
-    "id": 1,
-    "title": "CBT Tools : Revit Plugins + Dashboard",
-    "link": "/projects/cbt-tools",
-    "description": "Revit C# add-ins (WebView UI) for model management + cleanup, paired with a React dashboard and MongoDB backend with WebSockets for live metrics."
+    "id": "cbt-tools",
+    "title": "CBT Tools — Revit Telemetry, Plugins & Live BIM Dashboard",
+    "description": "An internal BIM analytics platform connecting Revit C# add-ins, MongoDB, WebSockets, and a React dashboard to monitor model performance, active users, sync behavior, and internal tool adoption across project teams.",
+    "image": "/project-images/cbt_vision.png",
+    "type": "Internal BIM Analytics Platform",
+    "role": "Design Technologist / Full-Stack Developer",
+    "highlights": [
+      "Captures model opening time, sync duration, warning count, file size, and crash status",
+      "Tracks active Revit users, open documents, active views, and project activity using heartbeat data",
+      "Logs plugin usage to understand internal tool adoption and workflow impact",
+      "Connects native Revit event data to dashboard-ready MongoDB collections"
+    ],
+    "tech": [
+      "Revit API",
+      "C#",
+      ".NET",
+      "WebView2",
+      "MongoDB",
+      "Node.js",
+      "Express",
+      "React",
+      "TypeScript",
+      "WebSockets"
+    ],
+    "featureTags": [
+      "Model Health",
+      "Sync Tracking",
+      "Live Heartbeat",
+      "Plugin Analytics",
+      "Crash Detection",
+      "Dashboard UI"
+    ],
+    "caseStudyUrl": "/projects/cbt-tools"
   },
   {
-    "id": 2,
-    "title": "Rental Lease Visualizer",
-    "link": "https://cbtit.github.io/rental-timeline/",
-    "description": "3D leasing analytics viewer combining Rhino geometry and Excel lease data, featuring interactive unit selection, hover details, and a timeline slider for visualizing occupancy over time."
+    "id": "rental-lease-visualizer",
+    "title": "Rental Lease Visualizer — 3D Leasing Analytics Platform",
+    "description": "A web-based 3D leasing analytics viewer that combines Rhino building geometry with Excel lease data to visualize unit occupancy, rent metrics, and leasing activity over time through an interactive Three.js interface.",
+    "image": "/project-images/lease_visualiser.png",
+    "type": "3D Data Visualization Platform",
+    "role": "Frontend Developer / Design Technologist",
+    "highlights": [
+      "Loaded Rhino 3DM building geometry into a React and Three.js viewer using Rhino3dmLoader",
+      "Mapped Excel-based lease data to individual apartment units for interactive occupancy visualization",
+      "Built timeline controls to explore leasing status across different dates",
+      "Added hover and click interactions for viewing unit-level lease details, rent, area, and occupancy status",
+      "Created 2D and 3D view modes for switching between analytical floor-level review and spatial building exploration",
+      "Designed visual leasing analytics including rent-per-square-foot buckets, floor-level unit counts, and occupancy breakdowns"
+    ],
+    "tech": [
+      "React",
+      "TypeScript",
+      "Three.js",
+      "@react-three/fiber",
+      "Drei",
+      "Rhino3dmLoader",
+      "Rhino 3DM",
+      "Excel Data",
+      "JSON",
+      "Vite",
+      "Tailwind CSS"
+    ],
+    "featureTags": [
+      "3D Leasing Analytics",
+      "Rhino Geometry",
+      "Timeline Slider",
+      "Unit Selection",
+      "Occupancy Visualization",
+      "Rent Metrics",
+      "2D / 3D Views"
+    ],
+    "caseStudyUrl": "https://cbtit.github.io/rental-timeline/",
+    "codeUrl": "https://github.com/cbtit/rental-timeline/"
   }
 ]

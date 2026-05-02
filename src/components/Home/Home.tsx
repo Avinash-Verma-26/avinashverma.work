@@ -1,6 +1,7 @@
 import "./Home.css";
 import headshot from "../../assets/headshot.jpeg";
 import { useState } from "react";
+
 const Home = () => {
   const [rotate, setRotate] = useState<boolean>(false);
   return (
@@ -20,7 +21,7 @@ const Home = () => {
           tools that help teams design faster and work smarter, from Revit/Rhino
           automation and workflow add-ins to data dashboards that turn messy
           project information into clear insights. Outside of the office, I
-          document what I’m learning as I level up in web development and
+          document what I'm learning as I level up in web development and
           product-building. This site is my home base: a place to share
           projects, experiments, and ideas that blend design craft with code.
         </p>
