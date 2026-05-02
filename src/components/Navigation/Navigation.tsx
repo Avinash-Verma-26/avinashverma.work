@@ -7,13 +7,13 @@ const Navigation = () => {
       <NavLink
         to="/"
         className={({ isActive }) =>
-          `text-3xl font-semibold transition-colors duration-200 ${isActive ? "text-brand!" : "text-zinc-600! hover:text-brand!"}`
+          `text-xl sm:text-3xl font-semibold transition-colors duration-200 ${isActive ? "text-brand!" : "text-zinc-600! hover:text-brand!"}`
         }
       >
         avinash-verma
       </NavLink>
 
-      <div className="flex items-center gap-4 text-xl text-zinc-500!">
+      <div className="flex items-center gap-3 text-base sm:text-xl text-zinc-500!">
         <NavLink
           to="/info"
           className={({ isActive }) =>
