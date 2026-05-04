@@ -1,4 +1,3 @@
-import "./Home.css";
 import headshot from "../../assets/headshot.jpeg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -14,7 +13,7 @@ const Home = () => {
       {/* Hero */}
       <div className="flex flex-col sm:flex-row-reverse gap-8 sm:items-end sm:justify-between">
         <img
-          className="headshot"
+          className="w-40 sm:w-55 shrink-0 self-center sm:self-auto grayscale hover:grayscale-0 hover:rounded-[100px] hover:rotate-[-5deg] transition-[filter,border-radius,transform] duration-150 ease-in"
           src={headshot}
           alt="Profile picture"
           onMouseOver={() => setRotate(true)}
@@ -33,7 +32,8 @@ const Home = () => {
 
           <p className="font-secondary text-sm text-zinc-600 leading-relaxed m-0">
             <span
-              className={rotate ? "rotate drop-cap" : "drop-cap"}
+              className={`float-left text-[64px] sm:text-[88px] leading-[0.6] font-bold mr-1.25 mb-1 font-main ${rotate ? "rotate-10 text-black" : "text-brand"}`}
+              style={{ transition: "transform 0.1s ease-in-out, color 0.2s ease-in-out" }}
               onMouseOver={() => setRotate(true)}
               onMouseOut={() => setRotate(false)}
             >

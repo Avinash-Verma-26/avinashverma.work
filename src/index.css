@@ -8,3 +8,12 @@
 
   --color-brand: #a52a2a;
 }
+
+@layer base {
+  #root {
+    @apply w-full box-border flex flex-col items-center justify-center m-0 p-0;
+  }
+  a {
+    @apply no-underline;
+  }
+}
