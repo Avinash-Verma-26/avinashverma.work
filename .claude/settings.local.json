@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\verma\\\\Desktop\\\\Jarvis\\\\01_Personal\\\\02_Website\\\\avinashverma.work\" -Recurse -Force)",
+      "Bash(Select-Object -First 100)",
+      "Bash(Format-Table FullName)"
+    ]
+  }
+}

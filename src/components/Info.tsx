@@ -1,6 +1,13 @@
+import { Link } from "react-router-dom";
+
 const Info = () => {
   return (
     <div className="w-full flex flex-col gap-4 pt-5 font-secondary">
+      <div className="flex items-center gap-3 text-xs text-zinc-400">
+        <Link to="/" className="hover:text-zinc-700 transition-colors duration-200">
+          ← home
+        </Link>
+      </div>
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <a
